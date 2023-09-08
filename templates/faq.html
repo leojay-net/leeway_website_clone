@@ -1,0 +1,380 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Faq</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/settings.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/navigation.css' %}">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/color1.css' %}">
+</head>
+
+
+<body class="hpp3 st2 no-bg">
+	
+
+	<div class="wrapper">
+		
+
+		<div class="page-loading">
+			<div class="thecube">
+				<div class="cube c1"></div>
+				<div class="cube c2"></div>
+				<div class="cube c4"></div>
+				<div class="cube c3"></div>
+			</div>
+		</div><!--page-loading end-->
+
+		<header class="hp1">
+			<div class="container">
+				<div class="main-header">
+					<div class="logo">
+						<img src="{% static 'images/logo2.png' %}" alt="">
+					</div><!--logo end-->
+					<div class="mobile-menu-bar">
+						<a href="#" title=""><i class="fa fa-bars"></i></a>
+					</div><!--mobile-menu-bar end-->
+					<div class="cart-links">
+						<ul>
+							
+							<li><a href="{% url 'home' %}" title="">Home</a>
+								
+							</li>
+							<li><a href="{% url 'about' %}" title="">About Us</a>
+								<ul>
+									
+					</nav><!--Navigation End-->
+					
+				</div><!--main-header end-->
+			</div>
+		</header><!--header end-->
+
+		<div class="mobile-menu">
+			<a href="#" title="" class="close-search"><img src="{% static 'images/close.png' %}" alt=""></a>
+			<div class="mbl-logo2">
+				<img src="{% static 'images/logo2.png' %}" alt="">
+			</div><!--mbl-logo end-->
+			<nav>
+				<ul>
+					<li><a href="{% url 'home' %}" title="">Home</a>
+						
+		</div><!--mobile-menu end-->
+
+		<div class="right-side-menu">
+			<div class="r-logo wow fadeInUp" data-wow-delay=".2s">
+				<img src="{% static 'images/logo3.png' %}" alt="">
+			</div><!--r-logo end-->
+			<div class="r-search wow fadeInUp" data-wow-delay=".4s">
+				<form>
+					<input type="text" name="search" placeholder="Search">
+					<button type="submit"><img src="{% static 'images/search-icon2.png' %}" alt=""></button>
+				</form>
+			</div><!--r-search end-->
+			<div class="widget widget-currency wow fadeInUp" data-wow-delay=".6s">
+				<h3 class="widget-title">Crypto Ticker</h3>
+				<div class="crncy-dets">
+					<ul>
+						<li>
+							<h4>Crypto Currency</h4>
+							<h4>Price</h4>
+						</li>
+						<li>
+							<div class="cp-img">
+								<img src="{% static 'images/ccp1.png' %}" alt="">
+							</div>
+							<div class="cp-info">
+								<span>Bitcoin</span>
+								<b>(BTC)</b>
+							</div>
+							<span><i class="fa fa-caret-down"></i>$ 10744.8</span>
+						</li>
+						<li>
+							<div class="cp-img">
+								<img src="{% static 'images/ccp2.png' %}" alt="">
+							</div>
+							<div class="cp-info">
+								<span>Ethereum </span>
+								<b>(ETH)</b>
+							</div>
+							<span><i class="fa fa-caret-down"></i>$ 866.163 </span>
+						</li>
+						<li>
+							<div class="cp-img">
+								<img src="{% static 'images/ccp3.png' %}" alt="">
+							</div>
+							<div class="cp-info">
+								<span>Ripple </span>
+								<b>(XRP)</b>
+							</div>
+							<span><i class="fa fa-caret-down"></i>$ 0.930609 </span>
+						</li>
+						<li>
+							<div class="cp-img">
+								<img src="{% static 'images/ccp4.png' %}" alt="">
+							</div>
+							<div class="cp-info">
+								<span>Bitcoin Cash</span>
+								<b>(BCH)</b>
+							</div>
+							<span><i class="fa fa-caret-down"></i>$ 1272.08 </span>
+						</li>
+						<li>
+							<div class="cp-img">
+								<img src="{% static 'images/ccp5.png' %}" alt="">
+							</div>
+							<div class="cp-info">
+								<span>Litecoin</span>
+								<b>(LTC)</b>
+							</div>
+							<span><i class="fa fa-caret-down"></i>$ 211.754 </span>
+						</li>
+						<li>
+							<div class="cp-img">
+								<img src="{% static 'images/ccp6.png' %}" alt="">
+							</div>
+							<div class="cp-info">
+								<span>Cardano</span>
+								<b>(ADA)</b>
+							</div>
+							<span><i class="fa fa-caret-down"></i>$ 0.304302 </span>
+						</li>
+					</ul>
+				</div><!--crncy-dets end-->
+			</div><!--widget-currency end-->
+			<a href="#" title="" class="close-search"><img src="{% static 'images/close.png' %}" alt=""></a>
+		</div><!--right-side-menu end-->
+		
+		<div class="fixed-prices">
+			<ul>
+				<li>
+					<img src="{% static 'images/f1.png' %}" alt="">
+					<h4>Cardano (ADA)</h4>
+					<span><i class="fa fa-caret-down"></i>$ 0.304302</span>
+				</li>
+				<li>
+					<img src="{% static 'images/f2.png' %}" alt="">
+					<h4>Bitcoin (BTC)</h4>
+					<span><i class="fa fa-caret-down"></i>$ 10744.8</span>
+				</li>
+				<li>
+					<img src="{% static 'images/f3.png' %}" alt="">
+					<h4>Ethereum (ETH)</h4>
+					<span><i class="fa fa-caret-down"></i>$ 866.163</span>
+				</li>
+				<li>
+					<img src="{% static 'images/f4.png' %}" alt="">
+					<h4>Ripple (XRP)</h4>
+					<span><i class="fa fa-caret-down"></i>$ 0.930609</span>
+				</li>
+				<li>
+					<img src="{% static 'images/f5.png' %}" alt="">
+					<h4>Litecoin (LTC)	</h4>
+					<span><i class="fa fa-caret-down"></i>$ 211.754</span>
+				</li>
+			</ul>
+		</div><!--fixed-prices end-->
+
+
+		<div class="search-page">
+			<form>
+				<input type="text" name="search" placeholder="Enter Search Term">
+				<button type="submit"><img src="{% static 'images/search-icon.png' %}" alt=""></button>
+			</form>
+			<a href="#" title="" class="close-search"><img src="{% static 'images/close.png' %}" alt=""></a>
+		</div><!--search-page end-->
+
+
+		<section class="pager-sec">
+			<div class="container">
+				<div class="pager-sec-details">
+					<h3>Faq</h3>
+					<ul>
+						<li><a href="{% url 'home' %}" title="">Home</a></li>
+						<li><a href="#" title="">Faq </a></li>
+					</ul>
+				</div><!--pager-sec-details end-->
+			</div>
+		</section><!--pager-sec end-->
+
+
+		<section class="page-content cnt pb-0">
+			<div class="container">
+				<div class="services-ques">
+					<div class="provide-accordion toggle wow fadeInUp" data-wow-delay=".2s">
+						<div class="toggle-item activate">
+							<h2 class="active">What do i need to start?</h2>
+							<div class="content">
+								<p>The information you need to provide for your wallet to be created are; . Your Full Names . Date Of Birth . Your� Email Address. . Your Phone Number.</p>
+								<ul class="bl-links">
+									<li><li>
+									<li>Instant, on-demand settlement</li>
+									<li>Real-time traceability of funds</li>
+									<li>Low operational and liquidity costs</li>
+								</ul>
+							</div>
+						</div><!-- Toggle Item -->
+						<div class="toggle-item">
+							<h2>When do i start earning</h2>
+							<div class="content">
+								<p>Your wallet will be created by a mining expert and it will be connected to our platform, a mail will be sent to you from the mailer ontaining your wallet information ( wallet ID) and a pseudorandomly generated system password will be sent to you accordingly.</p>
+								<ul class="bl-links">
+									<li>Connectivity across payments networks</li>
+									<li>Instant, on-demand settlement</li>
+									<li>Real-time traceability of funds</li>
+									<li>Low operational and liquidity costs</li>
+								</ul>
+							</div>
+						</div><!-- Toggle Item -->
+						<div class="toggle-item">
+							<h2>How do i verify my wallet</h2>
+							<div class="content">
+								<p>YOU ARE REQUIRED TO VERIFY YOUR EMAIL ADDRESS ONCE YOUR WALLET IS READY. 1. You're to login with the code generated system password after you have verified your email address. 2. Once you login into your wallet you're advise/ required to immediately change the pass code generated system password to a new or a unique password of your choice that you alone can have access to. 3.� You are also advise to set the various security verifications processes to enable you secure your investment. 4.� After you must have� changed your password and also completed the security setup. 5. Go to�our site to sign up, use the same email address you provided, because the email is already connected to your wallet  Once you have completed your sign up process; 6. You can now go and fund your wallet with the required amount of Bitcoin plan that you must have chosen..</p>
+								<ul class="bl-links">
+									<li>Connectivity across payments networks</li>
+									<li>Instant, on-demand settlement</li>
+									<li>Real-time traceability of funds</li>
+									<li>Low operational and liquidity costs</li>
+								</ul>
+							</div>
+						</div><!-- Toggle Item -->
+					</div><!-- Provide Accordion -->
+				</div><!--services-ques end-->
+
+			</div>
+		</section><!--page-content end-->
+
+
+		<section class="paymy pt-30">
+	    	<div class="container">
+			    <div class="payment_info">
+					<h2 class="wow fadeInUp" data-wow-delay=".3s">Join Our<span>Platform</span> Today </h2>
+					
+					<a class="wow fadeInUp" data-wow-delay=".5s" href="https://ppusrr.leewaymining.net/register" title="">BECOME A MEMBER TODAY</a>
+				</div><!--payment_info end-->
+			</div>
+		</section>
+
+	    <footer class="hp2 vabt">
+	    	<div class="t_footer">
+	    		<div class="container">
+		    		<div class="row">
+		    			<div class="col-lg-3 col-md-12">
+		    				<div class="logo10" data-wow-delay=".2s">
+		    					<img src="{% static 'images/logo10.png' %}" alt="">
+		    				</div><!--t-logo end-->
+		    			</div>
+		    			<div class="col-lg-6 col-md-12">
+		    				<ul class="t-links wow fadeInUp" data-wow-delay=".3s">
+		    					<li><a href="#" title="">Write for Us</a></li>
+		    					<li><a href="#" title="">Terms & Conditions</a></li>
+		    					<li><a href="#" title="">Privacy Policy</a></li>
+		    					<li><a href="#" title="">Contact</a></li>
+		    					<li><a href="#" title="">Register</a></li>
+		    				</ul><!--t-links end-->
+		    			</div>
+		    			<div class="col-lg-3 col-md-12">
+		    				<ul class="socio-links wow fadeInUp" data-wow-delay=".4s">
+								<li><a href="#" title=""><i class="fa fa-github"></i></a></li>
+								<li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" title=""><i class="fa fa-hashtag"></i></a></li>
+								<li><a href="#" title=""><i class="fa fa-github"></i></a></li>
+							</ul>
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div><!--t_footer end-->
+    		<div class="main_footer">
+	    		<div class="container">
+		    		<div class="main-footer">
+		    			<div class="widget wow fadeInUp" data-wow-delay=".5s">
+		    				<h3 class="widget-title">RESOURCES</h3>
+		    				<ul class="widget-links">
+		    					<li><a href="#" title="">How to Buy Coin</a></li>
+		    					<li><a href="#" title="">Coin Overview</a></li>
+		    					<li><a href="#" title="">Blog News</a></li>
+		    					<li><a href="#" title="">How to Sell Coin</a></li>
+		    					<li><a href="#" title="">Purchase Theme</a></li>
+		    				</ul><!--widget-links end-->
+		    			</div><!--widget end-->
+		    			<div class="widget wow fadeInUp" data-wow-delay=".6s">
+		    				<h3 class="widget-title">NETWORK</h3>
+		    				<ul class="widget-links">
+		    					<li><a href="#" title="">Network Stats</a></li>
+		    					<li><a href="#" title="">Block Explorers</a></li>
+		    					<li><a href="#" title="">Governance</a></li>
+		    					<li><a href="#" title="">Exchange Markets</a></li>
+		    					<li><a href="#" title="">Get Theme</a></li>
+		    				</ul><!--widget-links end-->
+		    			</div><!--widget end-->
+		    			<div class="widget wow fadeInUp" data-wow-delay=".7s">
+		    				<h3 class="widget-title">SUPPORT</h3>
+		    				<ul class="widget-links">
+		    					<li><a href="#" title="">Contact Us</a></li>
+		    					<li><a href="#" title="">Developer Center</a></li>
+		    					<li><a href="#" title="">Helpes</a></li>
+		    					<li><a href="#" title="">Terms &amp; Conditions</a></li>
+		    					<li><a href="#" title="">Purchase Theme</a></li>
+		    				</ul><!--widget-links end-->
+		    			</div><!--widget end-->
+		    			<div class="widget widget-newsletter wow fadeInUp" data-wow-delay=".8s">
+							<h3 class="widget-title">Newsletter</h3>
+							<p>Subscribe now and get exclusive news, interviews and stories.</p>
+							<form>
+								<input type="text" name="subscribe" placeholder="Your Email">
+								<button type="submit">Subcribe</button>
+							</form>
+						</div>
+		    		</div><!--main-footer end-->
+	    		</div>
+    		</div><!--main_footer end-->
+	    	<div class="bottom-footer">
+    			<p>© 2021  All rights reserved.  <a href="#" title=""></a></p>
+    			<a href="#" title="" class="scrollertop"><img src="{% static 'images/up-arrow.png' %}" alt=""></a>
+    		</div><!--bottom-footer end-->
+	    </footer><!--footer end-->
+
+
+	    
+		
+
+	</div>
+
+
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</body>
+
+</html>
+</body>
+
+</html>

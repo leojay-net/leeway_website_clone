@@ -1,0 +1,927 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navigation.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/color1.css' %}">
+
+</head>
+
+
+<body class="hpp3">
+
+
+    <div class="wrapper">
+
+
+        <div class="page-loading">
+            <div class="thecube">
+                <div class="cube c1"></div>
+                <div class="cube c2"></div>
+                <div class="cube c4"></div>
+                <div class="cube c3"></div>
+            </div>
+        </div>
+        <!--page-loading end-->
+
+        <header class="hp3">
+            <div class="container">
+                <div class="main-header">
+                    <div class="logo2">
+                        <img src="{% static 'images/logo2.png' %}" alt="">
+                    </div>
+                    <!--logo end-->
+                    <div class="mobile-menu-bar">
+                        <a href="#" title=""><i class="fa fa-bars"></i></a>
+                    </div>
+                    <!--mobile-menu-bar end-->
+                    <div class="cart-links">
+                        <ul class="language-list">
+                            <li>
+                                <a href="#" title="" class="lang-selct">EN</a>
+                                <ul class="lang-list">
+                                    <li><a href="#" title="">FRA</a></li>
+                                    <li><a href="#" title="">SPA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--language-list end-->
+                        <ul>
+                            <li class="bars">
+                                <a href="#" title="" class="open-rsm-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--cart-links end-->
+                    <nav class="hp3links">
+                        <ul>
+                            <li><a href="{% url 'home' %}" title="">HOME </a></li>
+                            <li><a href="{% url 'about' %}" title="">ABOUT US </a></li>
+
+                            <li> <a href="{% url 'faq' %}" title="">FAQ</a></li>
+                            <li><a href="{% url 'contact' %}" title="">CONTACT</a></li>
+                            <li class="sign-up-btn"><a href="{% url 'signup' %}" title="">Sign
+                                    up</a></li>
+                            <li><a href="{% url 'login' %}" title="">Log in</a></li>
+                        </ul>
+                    </nav>
+                    <!--Navigation End-->
+                </div>
+                <!--main-header end-->
+            </div>
+        </header>
+        <!--header end-->
+
+
+        <div class="mobile-menu">
+            <a href="#" title="" class="close-search"><img src="" alt=""></a>
+            <div class="">
+                <img src="{% static 'images/logo2.png' %}" alt="">
+            </div>
+            <!--mbl-logo end-->
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}" title="">Home</a>
+
+                    </li>
+                    <li><a href="{% url 'about' %}" title="">About Us</a></li>
+                    <li><a href="{% url 'faq' %}" title="">Faq</a></li>
+                    <li><a href="{% url 'contact' %}" title="">Contact</a></li>
+                    <li class="sign-up-btn"><a href="{% url 'signup' %}" title="">Sign up</a></li>
+                    <li><a href="{% url 'login' %}" title="">Log in</a></li>
+
+                    </li>
+                </ul>
+            </nav>
+            <!--Navigation End-->
+        </div>
+        <!--mobile-menu end-->
+
+
+
+        <div class="hand" data-wow-delay=".5s">
+
+
+            <section class="banner-sec3 pt">
+                <div class="container">
+                    <div class="banner_sec_details">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="banner_textt">
+                                    <h3 class="wow fadeInUp" data-wow-delay=".2s">The Premium Bitcoin And Other<br />
+                                        <strong>Crypto</strong> Currency Investment Platform
+                                    </h3>
+                                    <p class="wow fadeInUp" data-wow-delay=".4s">Our company specializes on Mining
+                                        Technologies, Smart Increase, and proper investment plans</p>
+                                    <ul>
+                                        <li class="wow fadeInUp" data-wow-delay=".6s"><a class="active"
+                                                href="{% url 'about' %}" title="">KNOW MORE</a></li>
+                                        <li class="wow fadeInUp" data-wow-delay=".8s"><a href="{% url 'contact' %}"
+                                                title=""> <i class="fa fa-play"></i>CONTACT</a></li>
+                                    </ul>
+                                </div>
+                                <!--banner_textt end-->
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="tk-details">
+                                    <h3 class="wow fadeInUp" data-wow-delay=".2s">STATS</h3>
+                                    <div class="timer wow fadeInUp" data-wow-delay=".4s" id="countdown"></div>
+                                    <div class="buy-token wow fadeInUp" data-wow-delay=".6s">
+                                        <a href="https://ppusrr.leewaymining.net/register" title="">BECOME A MEMBER</a>
+                                    </div>
+                                    <!--buy-token end-->
+                                    <div class="worth-info">
+                                        <div class="wr-info wow fadeInUp" data-wow-delay=".8s">
+                                            <h3>$58,458,478</h3>
+                                            <span>Worth of tokens</span>
+                                        </div>
+                                        <div class="wr-info wow fadeInUp" data-wow-delay=".9s">
+                                            <h3>5,896</h3>
+                                            <span>BTC Raised</span>
+                                        </div>
+                                    </div>
+                                    <!--worth-info end-->
+                                    <div class="progress-chart wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="pp-info">
+                                            <span>$5m</span>
+                                            <span>$85m</span>
+                                        </div>
+                                        <!--pp-info end-->
+                                        <div class="progress_bar wow fadeInUp" data-wow-delay=".8s">
+                                            <div class="progress">
+                                                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75"
+                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <!--progress_bar end-->
+                                        <div class="pp-info mb-0 wow fadeInUp" data-wow-delay=".9s">
+                                            <span>Softcap in 2458 days</span>
+                                            <span>Hardcap</span>
+                                        </div>
+                                        <!--pp-info end-->
+                                    </div>
+                                    <!--progress-chart end-->
+                                </div>
+                                <!--tk-details end-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--banner_sec_details end-->
+                </div>
+            </section>
+            <!--banner-sec3 end-->
+
+
+            <section class="about_us_sec">
+                <div class="container">
+                    <div class="about_us_details">
+                        <div class="heading">
+                            <h4 class="wow fadeInUp" data-wow-delay=".2s">Why Leewaymining </h4>
+                            <h3 class="wow fadeInUp" data-wow-delay=".3s">Competitive Advantage </h3>
+                        </div>
+                        <!--heading end-->
+                        <div class="services_details">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="service_info wow fadeInUp" data-wow-delay=".2s">
+                                        <img src="{% static 'images/cp1.png' %}" alt="">
+                                        <h3>Good Packages</h3>
+                                        <p>We provide great and amazing packages for all customers. </p>
+                                    </div>
+                                    <!--service_info end-->
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="service_info wow fadeInUp" data-wow-delay=".3s">
+                                        <img src="{% static 'images/cp2.png' %}" alt="">
+                                        <h3>Easy Withdrawal Method</h3>
+                                        <p>Your profits are withdrawed easily at the appropriate time and all investment
+                                            profits including bonuses returns to the customer. </p>
+                                    </div>
+                                    <!--service_info end-->
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="service_info wow fadeInUp" data-wow-delay=".4s">
+                                        <img src="{% static 'images/cp3.png' %}" alt="">
+                                        <h3>Global System and Secure Services</h3>
+                                        <p>All your accounts are safe and secured, no hidden or unespected charges. </p>
+                                    </div>
+                                    <!--service_info end-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--services_details end-->
+                    </div>
+                    <!--about_us_details end-->
+                </div>
+            </section>
+            <!--about_us_sec end-->
+
+
+            <section class="core-sec pt pb-0">
+                <div class="container">
+                    <div class="heading">
+                        <h4 class="wow fadeInUp" data-wow-delay=".2s">Our Mission</h4>
+                        <h3 class="wow fadeInUp" data-wow-delay=".3s">What Is Leewaymining </h3>
+                    </div>
+                    <!--heading end-->
+                    <div class="core-sec-details">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="core-para">
+                                    <h3 class="wow fadeInUp" data-wow-delay=".2s">We’ve built a platform to increase all
+                                        currencies.</h3>
+                                    <p class="wow fadeInUp" data-wow-delay=".3s">Using our platform, crypto investors
+                                        mine and increases their coins as rate rises, we introduce our customers to
+                                        various investment plans and make all staffs available to coach and teach them
+                                        when and how to invest.</p>
+                                    <p class="wow fadeInUp" data-wow-delay=".4s"> Investors can use services to divide
+                                        their investments between various services like P2P loans, crowdfunding, etc.
+                                        The first version of the STMX allows startups to launch and manage crowdfunding
+                                        and ICO campaigns. </p>
+                                </div>
+                                <!--core-para end-->
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                        <div class="cap-info clrr1 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="cap-icon">
+                                                <img src="{% static 'images/cap1.png' %}" alt="">
+                                            </div>
+                                            <h3>Secured Payment</h3>
+                                        </div>
+                                        <!--cap-info end-->
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                        <div class="cap-info clrr2 wow fadeInUp" data-wow-delay=".3s">
+                                            <div class="cap-icon">
+                                                <img src="{% static 'images/cap2.png' %}" alt="">
+                                            </div>
+                                            <h3>One Click Application</h3>
+                                        </div>
+                                        <!--cap-info end-->
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                        <div class="cap-info clrr3 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="cap-icon">
+                                                <img src="{% static 'images/cap3.png' %}" alt="">
+                                            </div>
+                                            <h3>External Integration</h3>
+                                        </div>
+                                        <!--cap-info end-->
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                        <div class="cap-info clrr4 wow fadeInUp" data-wow-delay=".5s">
+                                            <div class="cap-icon">
+                                                <img src="{% static 'images/cap4.png' %}" alt="">
+                                            </div>
+                                            <h3>Fully<br /> Secure</h3>
+                                        </div>
+                                        <!--cap-info end-->
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                        <div class="cap-info clrr5 wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="cap-icon">
+                                                <img src="{% static 'images/cap5.png' %}" alt="">
+                                            </div>
+                                            <h3>Internal Integration</h3>
+                                        </div>
+                                        <!--cap-info end-->
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                        <div class="cap-info clrr6 wow fadeInUp" data-wow-delay=".7s">
+                                            <div class="cap-icon">
+                                                <img src="{% static 'images/cap6.png' %}" alt="">
+                                            </div>
+                                            <h3>Payment Getway </h3>
+                                        </div>
+                                        <!--cap-info end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--core-sec-details end-->
+                </div>
+            </section>
+            <!--core-sec end-->
+
+
+            <section class="token-sec pt pb-0">
+                <div class="container">
+                    <div class="heading">
+                        <h3 class="wow fadeInUp" data-wow-delay=".2s">Initial Token Distribution</h3>
+                    </div>
+                    <!--heading end-->
+                    <div class="token-sec-details">
+                        <div class="token_details">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="token-info">
+                                        <ul>
+                                            <li class="wow fadeInUp" data-wow-delay=".3s">
+                                                <h3>10%</h3>
+                                                <span>Tokens Presale</span>
+                                            </li>
+                                            <li class="wow fadeInUp" data-wow-delay=".4s">
+                                                <h3>15%</h3>
+                                                <span>Bonus Fund</span>
+                                            </li>
+                                            <li class="wow fadeInUp" data-wow-delay=".5s">
+                                                <h3>30%</h3>
+                                                <span>Partners And Advisors</span>
+                                            </li>
+                                            <li class="wow fadeInUp" data-wow-delay=".6s">
+                                                <h3>40%</h3>
+                                                <span>Core Phase Of Tokens Sale</span>
+                                            </li>
+                                            <li class="wow fadeInUp" data-wow-delay=".7s">
+                                                <h3>5%</h3>
+                                                <span>Bounties</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--token-info end-->
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hand" data-wow-delay=".5s">
+                                        <img src="{% static 'images/hand.png' %}" alt="">
+                                    </div>
+                                    <!--circle-img end-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--token_details end-->
+                    </div>
+                    <!--token-sec-details end-->
+                </div>
+            </section>
+            <!--token-sec end-->
+
+            <section class="token-sec st2 pt pb-0">
+                <div class="container">
+                    <div class="heading">
+                        <h3 class="wow fadeInUp" data-wow-delay=".2s">Initial Token Distribution</h3>
+                    </div>
+                    <!--heading end-->
+                    <div class="token-sec-details">
+                        <div class="token_details st2">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="girl" data-wow-delay=".4s">
+                                        <img src="{% static 'images/girl.png' %}" alt="">
+                                    </div>
+                                    <!--circle-img end-->
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="token-info st2 ta-right">
+                                        <ul>
+                                            <li class="wow fadeInUp" data-wow-delay=".2s">25% Branding and Marketing
+                                            </li>
+                                            <li class="wow fadeInUp" data-wow-delay=".3s">20% Gift Code Invemtory</li>
+                                            <li class="wow fadeInUp" data-wow-delay=".4s">20% Legal & Financial Overhead
+                                            </li>
+                                            <li class="wow fadeInUp" data-wow-delay=".5s">15% IT Infastructure</li>
+                                            <li class="wow fadeInUp" data-wow-delay=".6s">10% Bounty & Overhead</li>
+                                            <li class="wow fadeInUp" data-wow-delay=".7s">5% Management</li>
+                                        </ul>
+                                    </div>
+                                    <!--token-info end-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--token_details end-->
+                    </div>
+                    <!--token-sec-details end-->
+                </div>
+            </section>
+            <!--token-sec end-->
+
+
+            <section class="sale-sec pt">
+                <div class="container">
+                    <div class="heading">
+                        <h4 class="wow fadeInUp" data-wow-delay=".2s">Tokens</h4>
+                        <h3 class="wow fadeInUp" data-wow-delay=".3s">Pre-Sale & Values </h3>
+                    </div>
+                    <!--heading end-->
+                    <div class="values-sec">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="value-tm-info">
+                                    <ul>
+
+                                        <li class="wow fadeInUp" data-wow-delay=".4s">
+                                            <h3>Acceptable currencies</h3>
+                                            <span>ETH, BTC, LTC</span>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-delay=".5s">
+                                            <h3>Number of tokens for sale</h3>
+                                            <span>900,000 ICC (9%)</span>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-delay=".6s">
+                                            <h3>Tokens exchange rate</h3>
+                                            <span>900,000 ICC (9%)</span>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-delay=".7s">
+                                            <h3>Minimal transaction amount</h3>
+                                            <span>1 ETH/ 1 BTC/ 1 LTC</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--value-tm-info end-->
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="payment-method-info">
+                                    <h3 class="wow fadeInUp" data-wow-delay=".2s">Payment Methods</h3>
+                                    <p class="wow fadeInUp" data-wow-delay=".3s">We accept all crypto payments on the
+                                        basis of Ethereum and Bitocin platforms even Bank deposits. It’s compatibility
+                                        of the token with third-party services wallets, exchanges etc, and provides
+                                        easy-to-use integration. </p>
+                                    <ul class="cc-icons wow fadeInUp" data-wow-delay=".4s">
+                                        <li><a href="#" title=""><i class="fa fa-bitcoin"></i></a></li>
+                                        <li><a href="#" title=""><i class="fa fa-krw"></i></a></li>
+                                        <li><a href="#" title=""><i class="fa fa-cc-visa"></i></a></li>
+                                        <li><a href="#" title=""><i class="fa fa-cc-mastercard"></i></a></li>
+                                    </ul>
+                                    <h3 class="wow fadeInUp" data-wow-delay=".5s">Non Crypto Method Of Payment</h3>
+                                    <p class="wow fadeInUp" data-wow-delay=".6s">We accept bank deposits and credit
+                                        cards transfer</p>
+                                </div>
+                                <!--payment-method-info end-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--values-sec end-->
+                </div>
+            </section>
+            <!--sale-sec end-->
+
+
+            <section class="timline-sec">
+                <div class="container">
+                    <div class="heading">
+                        <h4 class="wow fadeInUp" data-wow-delay=".2s">Road Map</h4>
+                        <h3 class="wow fadeInUp" data-wow-delay=".3s">The Timeline</h3>
+                    </div>
+                    <!--heading end-->
+                    <div class="timeline-sec-details">
+                        <div class="timeline-div">
+                            <div class="timeline-details">
+                                <span class="wow fadeInUp" data-wow-delay=".2s">From Begining</span>
+                                <h3 class="wow fadeInUp" data-wow-delay=".3s">Leewaymining Development Starts</h3>
+                                <p class="wow fadeInUp" data-wow-delay=".4s">It has been a long run and lots of
+                                    customers had testify with great proof that crypto investment is actually the trend
+                                    all most follow. </p>
+                            </div>
+                            <!--timeline-details end-->
+                        </div>
+                        <!--timeline-div end-->
+                        <div class="timeline-div">
+                            <div class="timeline-details">
+                                <span class="wow fadeInUp" data-wow-delay=".2s">Till Date</span>
+                                <h3 class="wow fadeInUp" data-wow-delay=".3s">Leewaymining Development Starts</h3>
+                                <p class="wow fadeInUp" data-wow-delay=".4s">Lots of investment benefits and all
+                                    customers being able to access funds just as they have wanted. </p>
+                            </div>
+                            <!--timeline-details end-->
+                        </div>
+                        <!--timeline-div end-->
+                        <div class="timeline-div">
+                            <div class="timeline-details">
+                                <span class="wow fadeInUp" data-wow-delay=".2s">Complains</span>
+                                <h3 class="wow fadeInUp" data-wow-delay=".3s">Leewaymining Development Starts</h3>
+                                <p class="wow fadeInUp" data-wow-delay=".4s">We cant say they have been no complain at
+                                    times server delay, and other network issues</p>
+                            </div>
+                            <!--timeline-details end-->
+                        </div>
+                        <!--timeline-div end-->
+                        <div class="timeline-div">
+                            <div class="timeline-details">
+                                <span class="wow fadeInUp" data-wow-delay=".2s">Solutions</span>
+                                <h3 class="wow fadeInUp" data-wow-delay=".3s">Leewaymining Development Starts</h3>
+                                <p class="wow fadeInUp" data-wow-delay=".4s">We make available responsive and steady
+                                    online customer agents to attend to every complains and make sure they are resolved
+                                    immediately</p>
+                            </div>
+                            <!--timeline-details end-->
+                        </div>
+                        <!--timeline-div end-->
+                    </div>
+                    <!--timeline-sec-details end-->
+                </div>
+            </section>
+            <!--timline-sec end-->
+
+
+            <section class="app-sec pt pb-0">
+                <div class="container">
+                    <div class="heading">
+                        <h4 class="wow fadeInUp" data-wow-delay=".2s">Leewaymining App</h4>
+                        <h3 class="wow fadeInUp" data-wow-delay=".3s">Leewaymining Mobile App</h3>
+                    </div>
+                    <!--heading end-->
+                    <div class="app-sec-details">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="app-info">
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">Get access to our exclusive App
+                                        features and control the crypto investment world.
+                                        <li class="wow fadeInUp" data-wow-delay=".3s">Fast Services</li>
+                                        <li class="wow fadeInUp" data-wow-delay=".4s">Accurate customercare team</li>
+                                        <li class="wow fadeInUp" data-wow-delay=".5s">Live Online Agent</li>
+                                        <li class="wow fadeInUp" data-wow-delay=".6s">Responsive Dashboard</li>
+                                        <li class="wow fadeInUp" data-wow-delay=".7s">Full Services</li>
+                                        </ul>
+                                    <div class="app-buy-links">
+                                        <a class="wow fadeInUp" data-wow-delay=".2s" href="#" title="">Get The App
+                                            Now</a>
+                                        <ul class="wow fadeInUp" data-wow-delay=".3s">
+                                            <li><a href="#" title=""><img src="{% static 'images/app1.png' %}"
+                                                        alt=""></a></li>
+                                            <li><a href="#" title=""><img src="{% static 'images/app2.png' %}"
+                                                        alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                    <!--app-buy-links end-->
+                                </div>
+                                <!--app-info end-->
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="she" data-wow-delay=".3s">
+                                    <img src="{% static 'images/she.png' %}" alt="">
+                                </div>
+                                <!--app-img end-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--app-sec-details end-->
+                </div>
+            </section>
+
+
+            <section class="faqs-sec pt pb-0">
+                <div class="container">
+                    <div class="heading">
+                        <h4 class="wow fadeInUp" data-wow-delay=".2s">Faq</h4>
+                        <h3 class="wow fadeInUp" data-wow-delay=".3s">Frequently Asked Questions</h3>
+                    </div>
+                    <!--heading end-->
+                    <div class="faqs-sec-details">
+                        <div class="nav nav-tabs wow fadeInUp" data-wow-delay=".3s" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab"
+                                href="#nav-general" role="tab" aria-controls="nav-general"
+                                aria-selected="true">General</a>
+                            <a class="nav-item nav-link" id="nav-preico-tab" data-toggle="tab" href="#nav-preico"
+                                role="tab" aria-controls="nav-preico" aria-selected="false">Pre-Ico & Ico</a>
+                            <a class="nav-item nav-link" id="nav-tokens-tab" data-toggle="tab" href="#nav-tokens"
+                                role="tab" aria-controls="nav-tokens" aria-selected="false">Tokens</a>
+                            <a class="nav-item nav-link" id="nav-client-tab" data-toggle="tab" href="#nav-client"
+                                role="tab" aria-controls="nav-client" aria-selected="false">Client</a>
+                            <a class="nav-item nav-link" id="nav-legal-tab" data-toggle="tab" href="#nav-legal"
+                                role="tab" aria-controls="nav-legal" aria-selected="false">Legal</a>
+                        </div>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-general" role="tabpanel"
+                                aria-labelledby="nav-general-tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques wow fadeInUp" data-wow-delay=".3s">
+                                            <h3>What is Leewaymining Investment Platform?</h3>
+                                            <p>Leewaymining - is a classic and premium investment platform, that
+                                                increase all crypto invested and mine it accurately</p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques wow fadeInUp" data-wow-delay=".4s">
+                                            <h3>What cryptocurrencies can I use to purchase?</h3>
+                                            <p>We offer our customers platform to purchase cryptocurrencies and also
+                                                sell their invested profits properly </p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques wow fadeInUp" data-wow-delay=".5s">
+                                            <h3>How can I participate in the Leewaymining Platform</h3>
+                                            <p>Create an account with us and start investing </p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques wow fadeInUp" data-wow-delay=".6s">
+                                            <h3>How do I benefit from the the company?</h3>
+                                            <p>You can easily benefit from gaining and getting double of your profitp>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-preico" role="tabpanel" aria-labelledby="nav-preico-tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>What Leewaymining</h3>
+                                            <p>Risingcoinsteer is an Investment platform that suits all crypto investor
+                                                needs</p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>What cryptocurrencies can I use to purchase?</h3>
+                                            <p>All kinds of currencies, Cash, Bitcoin, Eutherium and more</p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>How can I participate in the Investment Scheme?</h3>
+                                            <p>Everyone has the right to participate and everyone are included in our
+                                                investment schemep>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>How do I Invest?</h3>
+                                            <p>Deposit into your account and thats allp>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-tokens" role="tabpanel" aria-labelledby="nav-tokens-tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>How many currencies do you accept?</h3>
+                                            <p>Any Cryptocurrency
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>
+                                                </p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>Hope i can pull out anytime?</h3>
+                                            <p>Yes whenever you choose to</p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-client" role="tabpanel" aria-labelledby="nav-client-tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>Do you accept just Bitcoin?</h3>
+                                            <p>More than bitcoin
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3></h3>
+                                            <p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-legal" role="tabpanel" aria-labelledby="nav-legal-tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3></h3>
+                                            <p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="faq-ques">
+                                            <h3>24/7 Customer care services</h3>
+                                            <p></p>
+                                        </div>
+                                        <!--faq-ques end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--faqs-sec-details end-->
+                </div>
+            </section>
+            <!--faqs-sec end-->
+
+
+
+
+
+            <section class="contact-sec pt pb-0">
+                <div class="container">
+                    <div class="heading">
+                        <h4 class="wow fadeInUp" data-wow-delay=".2s">Contact</h4>
+                        <h3 class="wow fadeInUp" data-wow-delay=".3s">Get In Touch</h3>
+                    </div>
+                    <!--heading end-->
+                    <div class="contact-sec-details">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="contact-info">
+                                    <ul>
+                                        <li class="wow fadeInUp" data-wow-delay=".2s">
+                                            <img src="{% static 'images/ic1.png' %}" alt="">
+                                            <div class="cc-info">
+                                                <p>ICO TOKEN 555 Madison Avenue, Suite F-2 <br /> Manhattan, New York
+                                                    10282</p>
+                                            </div>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-delay=".3s">
+                                            <img src="{% static 'images/ic2.png' %}" alt="">
+                                            <div class="cc-info">
+                                                <p>Call Us <br />0934 343 343</p>
+                                            </div>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-delay=".4s">
+                                            <img src="{% static 'images/ic3.png' %}" alt="">
+                                            <div class="cc-info">
+                                                <p>Email <br /> info@token.com </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--contact-info end-->
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="contact-form">
+                                    <form method="post">
+                                        <input class="wow fadeInUp" data-wow-delay=".2s" type="text" name="name"
+                                            placeholder="Your Name ">
+                                        <input class="wow fadeInUp" data-wow-delay=".3s" type="text" name="email"
+                                            placeholder="Your Email ">
+                                        <textarea class="wow fadeInUp" data-wow-delay=".4s"
+                                            placeholder="Your Message "></textarea>
+                                        <button class="wow fadeInUp" data-wow-delay=".5s" type="submit">Send
+                                            Message</button>
+                                    </form>
+                                </div>
+                                <!--contact-form end-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--contact-sec-details end-->
+                </div>
+            </section>
+            <!--contact-sec end-->
+
+
+            <section class="partner-sec pt">
+                <div class="container">
+                    <div class="heading">
+                        <h4 class="wow fadeInUp" data-wow-delay=".2s">Partners</h4>
+                        <h3 class="wow fadeInUp" data-wow-delay=".3s">Trusted Crypto</h3>
+                    </div>
+                    <!--heading end-->
+
+                </div>
+                <!--partner-logo end-->
+        </div>
+        <!--partner-sec-details end-->
+    </div>
+    </section>
+    <!--partner-sec end-->
+
+    <footer class="hp3">
+        <div class="tp-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget widget-about wow fadeInUp" data-wow-delay=".2s">
+                            <img src="{% static 'images/log.png' %}" alt="">
+                            <ul class="socio-links">
+                                <li><a href="#" title=""><i class="fa fa-github"></i></a></li>
+                                <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" title=""><i class="fa fa-hashtag"></i></a></li>
+                                <li><a href="#" title=""><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                        <!--widget-about end-->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="get-updated wow fadeInUp" data-wow-delay=".4s">
+                            <h3>Subscribe to our newsleter</h3>
+                            <form>
+                                <input type="email" name="subscribe" placeholder="Your Email" required="">
+                                <button type="submit">Subcribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="widget widget-links wow fadeInUp" data-wow-delay=".6s">
+                            <ul>
+                                <li><a href="{% url 'about' %}" title="">About</a></li>
+                                <li><a href="{% url 'contact' %}" title="">Contact</a></li>
+                                <li><a href="{% url 'faq' %}" title="">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <!--widget-links end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--tp-footer end-->
+        <div class="container">
+            <div class="bottom-strip st2">
+                <p>© 2021 Leewaymining All rights reserved.</p>
+                <a href="#" title="">Go to top <i class="fa fa-long-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="{% static 'js/jquery-ui.js' %}"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="{% static 'js/countdown-timer.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

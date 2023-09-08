@@ -1,0 +1,339 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/settings.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/navigation.css' %}">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/colors/color1.css' %}">
+
+</head>
+
+
+<body class="hpp3 st2 no-bg">
+	
+
+	<div class="wrapper">
+		
+
+		<div class="page-loading">
+			<div class="thecube">
+				<div class="cube c1"></div>
+				<div class="cube c2"></div>
+				<div class="cube c4"></div>
+				<div class="cube c3"></div>
+			</div>
+		</div><!--page-loading end-->
+
+		<header class="hp1">
+			<div class="container">
+				<div class="main-header">
+					<div class="logo">
+						<img src="images/logo2.png" alt="">
+					</div><!--logo end-->
+					<div class="mobile-menu-bar">
+						<a href="#" title=""><i class="fa fa-bars"></i></a>
+					</div><!--mobile-menu-bar end-->
+					<div class="cart-links">
+						<ul>
+							<li>
+								<a href="#" title="" class="open-rsm-menu">
+									<span></span>
+									<span></span>
+									<span></span>
+								</a>
+							</li>
+						</ul>
+					</div><!--cart-links end-->
+					<nav>
+						<ul>
+							<li><a href="{% url 'home' %}" title="">Home</a>
+								
+									
+					</nav><!--Navigation End-->
+					
+				</div><!--main-header end-->
+			</div>
+		</header><!--header end-->
+
+		<div class="mobile-menu">
+			<a href="#" title="" class="close-search"><img src="images/close.png" alt=""></a>
+			<div class="logo2">
+				<img src="images/logo2.png" alt="">
+			</div><!--mbl-logo end-->
+			<nav>
+				<ul>
+					<li><a href="{% url 'home' %}" title="">Home</a>
+					
+				</ul>
+			</nav><!--Navigation End-->
+			<div class="close-mbl-menu">
+				<a href="{% url 'home' %}" title="Home"><i class="fa fa-window-close"></i></a>
+			</div>
+		</div><!--mobile-menu end-->
+
+		<div class="right-side-menu">
+			<div class="logo22" data-wow-delay=".2s">
+				<img src="images/logo22.png" alt="">
+			</div><!--r-logo end-->
+			<div class="r-search wow fadeInUp" data-wow-delay=".4s">
+				<form>
+					<input type="text" name="search" placeholder="Search">
+					<button type="submit"><img src="images/search-icon2.png" alt=""></button>
+				</form>
+			</div><!--r-search end-->
+			<div class="widget widget-currency wow fadeInUp" data-wow-delay=".6s">
+
+						</li>
+					</ul>
+				</div><!--crncy-dets end-->
+			</div><!--widget-currency end-->
+			<a href="#" title="" class="close-search"><img src="images/close.png" alt=""></a>
+		</div><!--right-side-menu end-->
+		
+		<div class="fixed-prices">
+			<ul>
+				<li>
+					<img src="images/f1.png" alt="">
+					<h4>Cardano (ADA)</h4>
+					<span><i class="fa fa-caret-down"></i>$ 0.304302</span>
+				</li>
+				<li>
+					<img src="images/f2.png" alt="">
+					<h4>Bitcoin (BTC)</h4>
+					<span><i class="fa fa-caret-down"></i>$ 10744.8</span>
+				</li>
+				<li>
+					<img src="images/f3.png" alt="">
+					<h4>Ethereum (ETH)</h4>
+					<span><i class="fa fa-caret-down"></i>$ 866.163</span>
+				</li>
+				<li>
+					<img src="images/f4.png" alt="">
+					<h4>Ripple (XRP)</h4>
+					<span><i class="fa fa-caret-down"></i>$ 0.930609</span>
+				</li>
+				<li>
+					<img src="images/f5.png" alt="">
+					<h4>Litecoin (LTC)	</h4>
+					<span><i class="fa fa-caret-down"></i>$ 211.754</span>
+				</li>
+			</ul>
+		</div><!--fixed-prices end-->
+
+
+		<div class="search-page">
+			<form>
+				<input type="text" name="search" placeholder="Enter Search Term">
+				<button type="submit"><img src="images/search-icon.png" alt=""></button>
+			</form>
+			<a href="#" title="" class="close-search"><img src="images/close.png" alt=""></a>
+		</div><!--search-page end-->
+
+
+		<section class="pager-sec st2">
+			<div class="container">
+				<div class="pager-sec-details">
+					<h3>Contact Us </h3>
+					<ul>
+						<li><a href="{% url 'home' %}" title="">Home</a></li>
+						<li><a href="{% url 'contact' %}" title="">Contact Us </a></li>
+					</ul>
+				</div><!--pager-sec-details end-->
+			</div>
+		</section><!--pager-sec end-->
+
+
+		<section class="contact-v-sec">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="contact-general-info">
+						<div class="gen-info">
+							<h3 class="g-title wow fadeInUp" data-wow-delay=".2s">General info </h3>
+							<ul>
+								<li class="wow fadeInUp" data-wow-delay=".3s">
+									<img src="images/v1.png" alt="">
+									<div class="g-info">
+										<h3>Location </h3>
+										<span></span>
+									</div>
+								</li>
+								<li class="wow fadeInUp" data-wow-delay=".4s">
+									<img src="images/v2.png" alt="">
+									<div class="g-info">
+										<h3>Phone </h3>
+										<span></span>
+									</div>
+								</li>
+								<li class="wow fadeInUp" data-wow-delay=".5s">
+									<img src="images/v3.png" alt="">
+									<div class="g-info">
+										<h3>Email </h3>
+										<span>agent@leewaymining.net</span>
+									</div>
+								</li>
+							</ul>
+						</div><!--gen-info end-->
+						<div class="g-contact">
+							<h3 class="g-title wow fadeInUp" data-wow-delay=".2s">Contact Form</h3>
+							<form class="js-ajax-form">
+								<div class="row">
+									<div class="col-lg-6 wow fadeInUp pl-0" data-wow-delay=".3s">
+										<input type="text" name="name" placeholder="Full Name" required>
+									</div>
+									<div class="col-lg-6 wow fadeInUp pr-0" data-wow-delay=".4s">
+										<input type="text" name="email" placeholder="Email" required>
+									</div>
+									<div class="col-lg-12 wow fadeInUp pl-0" data-wow-delay=".5s">
+										<input type="text" name="subject" placeholder="Subject">
+									</div>
+									<div class="col-lg-12 wow fadeInUp pr-0 pl-0" data-wow-delay=".6s">
+										<textarea placeholder="Message"></textarea>
+									</div>
+									<div class="col-lg-12 wow fadeInUp pl-0 pr-0" data-wow-delay=".7s">
+										<button type="submit">Submit</button>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+					                        <div class="success-message">
+					                        	<i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...
+					                        </div>
+					                        <div class="error-message">We're sorry, but something went wrong
+					                        </div>
+				                      	</div><!--form-group end-->
+									</div>
+								</div>
+							</form>
+						</div><!--g-contact end-->
+					</div><!--contact-general-info end-->
+				</div>
+				<div class="col-lg-6">
+					<div id="map" class="wow fadeInUp" data-wow-delay=".3s"></div>
+				</div>
+			</div>
+		</section><!--contact-v-sec end-->
+
+	
+	    <footer class="hp2 vabt">
+	    	<div class="t_footer">
+	    		<div class="container">
+		    		<div class="row">
+		    			<div class="logo33">
+		    				<div class="t-logo wow fadeInUp" data-wow-delay=".2s">
+		    					<img src="images/logo33.png" alt="">
+		    				</div><!--t-logo end-->
+		    			</div>
+		    			<div class="col-lg-6 col-md-12">
+		    				<ul class="t-links wow fadeInUp" data-wow-delay=".3s">
+		    					<li><a href="#" title="">Write for Us</a></li>
+		    					<li><a href="#" title="">Terms & Conditions</a></li>
+		    					<li><a href="#" title="">Privacy Policy</a></li>
+		    					<li><a href="#" title="">Contact</a></li>
+		    					<li><a href="#" title="">Register</a></li>
+		    				</ul><!--t-links end-->
+		    			</div>
+		    			<div class="col-lg-3 col-md-12">
+		    				<ul class="socio-links wow fadeInUp" data-wow-delay=".4s">
+								<li><a href="#" title=""><i class="fa fa-github"></i></a></li>
+								<li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" title=""><i class="fa fa-hashtag"></i></a></li>
+								<li><a href="#" title=""><i class="fa fa-github"></i></a></li>
+							</ul>
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div><!--t_footer end-->
+    		<div class="main_footer">
+	    		<div class="container">
+		    		<div class="main-footer">
+		    			<div class="widget wow fadeInUp" data-wow-delay=".5s">
+		    				<h3 class="widget-title">RESOURCES</h3>
+		    				<ul class="widget-links">
+		    					<li><a href="#" title="">How to Buy Coin</a></li>
+		    					<li><a href="#" title="">Coin Overview</a></li>
+		    					<li><a href="#" title="">Blog News</a></li>
+		    					<li><a href="#" title="">How to Sell Coin</a></li>
+		    					<li><a href="#" title="">Purchase Theme</a></li>
+		    				</ul><!--widget-links end-->
+		    			</div><!--widget end-->
+		    			<div class="widget wow fadeInUp" data-wow-delay=".6s">
+		    				<h3 class="widget-title">NETWORK</h3>
+		    				<ul class="widget-links">
+		    					<li><a href="#" title="">Network Stats</a></li>
+		    					<li><a href="#" title="">Block Explorers</a></li>
+		    					<li><a href="#" title="">Governance</a></li>
+		    					<li><a href="#" title="">Exchange Markets</a></li>
+		    					<li><a href="#" title="">Get Theme</a></li>
+		    				</ul><!--widget-links end-->
+		    			</div><!--widget end-->
+		    			<div class="widget wow fadeInUp" data-wow-delay=".7s">
+		    				<h3 class="widget-title">SUPPORT</h3>
+		    				<ul class="widget-links">
+		    					<li><a href="#" title="">Contact Us</a></li>
+		    					<li><a href="#" title="">Developer Center</a></li>
+		    					<li><a href="#" title="">Helpes</a></li>
+		    					<li><a href="#" title="">Terms &amp; Conditions</a></li>
+		    					<li><a href="#" title="">Purchase Theme</a></li>
+		    				</ul><!--widget-links end-->
+		    			</div><!--widget end-->
+		    			<div class="widget widget-newsletter wow fadeInUp" data-wow-delay=".8s">
+							<h3 class="widget-title">Newsletter</h3>
+							<p>Subscribe now and get exclusive news, interviews and stories.</p>
+							<form>
+								<input type="text" name="subscribe" placeholder="Your Email">
+								<button type="submit">Subcribe</button>
+							</form>
+						</div>
+		    		</div><!--main-footer end-->
+	    		</div>
+    		</div><!--main_footer end-->
+	    	<div class="bottom-footer">
+    			<p>© 2021  All rights reserved.  <a href="#" title=""></a></p>
+    			<a href="#" title="" class="scrollertop"><img src="images/up-arrow.png" alt=""></a>
+    		</div><!--bottom-footer end-->
+	    </footer><!--footer end-->
+
+
+	    
+
+	</div>
+
+
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/validator.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYc537bQom7ajFpWE5sQaVyz1SQa9_tuY&callback=initMap"></script>
+</body>
+
+</html>
